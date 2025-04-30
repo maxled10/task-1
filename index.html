@@ -4,17 +4,242 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insert Title Here</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Game Genie</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark gray text */
+            text-align: center; /* Center text within the body */
+        }
+
+        .header {
+            background-color: #e0e0e0; /* Light gray header */
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: left; /* Keep logo aligned to the left */
+        }
+
+        .menu-icon {
+            font-size: 1.8em;
+        }
+
+        #main-navigation { /* ID for the navigation bar */
+            background-color: #d0d0d0; /* Slightly darker gray navigation */
+            display: flex;
+            width: 100%;
+        }
+
+        .nav-link {
+            color: purple;
+            text-decoration: none;
+            padding: 15px;
+            text-align: center; /* Center text within each navigation link */
+            flex-grow: 1;
+        }
+
+        .nav-link:hover {
+            background-color: #c0c0c0; /* Even darker gray on hover */
+        }
+
+        #previous-info { /* ID for the first information block */
+            padding: 20px;
+            text-align: left; /* Align the main text to the left within the content area */
+            margin-bottom: 30px; /* Add some space below the first content block */
+        }
+
+        .main-text {
+            margin-bottom: 15px; /* Larger bottom margin */
+        }
+
+        .smaller-text {
+            margin-bottom: 10px; /* Smaller bottom margin */
+        }
+
+        .refurbished-consoles {
+            padding: 20px;
+            text-align: center; /* Center the title */
+            margin-bottom: 30px; /* Add space below this section */
+        }
+
+        .refurbished-title {
+            color: purple;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .consoles-grid {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+            justify-content: center; /* Center the console items horizontally */
+            gap: 15px; /* Space between the console items */
+            margin-bottom: 20px;
+        }
+
+        .console-item {
+            border: 1px solid #ccc; /* Light gray border for each item */
+            padding: 10px;
+            width: calc(33.33% - 30px); /* Roughly one-third width with spacing */
+            box-sizing: border-box; /* Include padding and border in the width */
+        }
+
+        .console-item img {
+            display: block; /* Remove extra space below image */
+            margin: 0 auto 10px; /* Center image and add some bottom space */
+            max-width: 100%; /* Make image responsive within its container */
+            height: auto;
+            background-color: #ddd; /* Placeholder for image background */
+            padding: 20px; /* Add some padding to the image placeholder */
+        }
+
+        .add-to-cart {
+            background-color: #f0f0f0; /* Light gray button */
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 8px 15px;
+            text-decoration: none;
+            display: inline-block; /* Make it behave like a block for consistent padding */
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+
+        .refurbished-text {
+            text-align: left; /* Align the text below the images to the left */
+        }
+
+        .another-section { /* Style for the previous new section */
+            padding: 20px;
+            text-align: center;
+            background-color: #e8e8e8; /* A slightly different background color */
+            margin-bottom: 30px; /* Add space below this section */
+        }
+
+        .another-section-title {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+
+        .another-section-content {
+            text-align: left;
+        }
+
+        .custom-options { /* Style for the new "Modding/Custom Options" section */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .custom-options-title {
+            color: purple;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .custom-options-text {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .email-us-link {
+            background-color: #f0f0f0; /* Light gray background */
+            color: #007bff; /* Blue link color */
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px; /* Slightly rounded corners */
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>My Website</h1>
-    </header>
-    <main>
-        <p>Insert Introduction Here</p>
-    </main>
-    <footer>
-        <p>Start Footer Here</p>
-    </footer>
+    <div class="header">
+        <div class="logo">GAME GENIE</div>
+        <div>
+            <span class="menu-icon">&#9776;</span> <span class="menu-icon">&#128100;</span> <span class="menu-icon">&#128276;</span>
+        </div>
+    </div>
+
+    <nav id="main-navigation" class="navigation">
+        <a href="#previous-info" class="nav-link">Modding consoles</a>
+        <a href="#refurbished-consoles-section" class="nav-link">Custom consoles</a>
+        <a href="#refurbished-consoles-section" class="nav-link">Refurbish consoles</a>
+        <a href="#custom-options-section" class="nav-link">Contact us</a>
+    </nav>
+
+    <div id="previous-info" class="content">
+        <div class="main-text">
+           game geinie<br>
+            this is a website where you can buy refurbished consoles and modding consoles old gen and ne gen making sure that you can get the cosole of youre dreams<br>
+        </div>
+    </div>
+
+    <div id="refurbished-consoles-section" class="refurbished-consoles">
+        <h2 class="refurbished-title">Refurbished consoles</h2>
+        <div class="consoles-grid">
+            <div class="console-item">
+                <img src="placeholder.png" alt="Image">
+                <a href="#" class="add-to-cart">Add to cart</a>
+            </div>
+            <div class="console-item">
+                <img src="placeholder.png" alt="Image">
+                <a href="#" class="add-to-cart">Add to cart</a>
+            </div>
+            <div class="console-item">
+                <img src="placeholder.png" alt="Image">
+                <a href="#" class="add-to-cart">Add to cart</a>
+            </div>
+            <div class="console-item">
+                <img src="placeholder.png" alt="Image">
+                <a href="#" class="add-to-cart">Add to cart</a>
+            </div>
+            <div class="console-item">
+                <img src="placeholder.png" alt="Image">
+                <a href="#" class="add-to-cart">Add to cart</a>
+            </div>
+            <div class="console-item">
+                <img src="placeholder.png" alt="Image">
+                <a href="#" class="add-to-cart">Add to cart</a>
+            </div>
+        </div>
+        <div class="refurbished-text">
+            Lorem ipsum<br>
+            Urhuheurhednjksckvbcv<br>
+            Dsnjdvruvnrbv<br>
+            <br>
+            Srjvrsrvbsruvbvuisrvbsrvsuirvbusrvb<br>
+            svndjvnsdjsnvjdvndc
+        </div>
+    </div>
+
+    
+
+    <div id="custom-options-section" class="custom-options">
+        <h2 class="custom-options-title">Modding console/ custom consoles options</h2>
+        <div class="custom-options-text">
+            We offer many options for creating your custom console or modding youre console to
+            your personal preferences email us and tell us along the set of prerances you have an
+            we will calculate the price
+        </div>
+        <div>
+            <a href="mailto:your-email@example.com" class="email-us-link">Email us</a>
+        </div>
+    </div>
+    <div class="about-us-bar">
+        <a href="#">About Us</a> |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="#">© 2025 Game Genie</a>
+    </div>
+
 </body>
 </html>
